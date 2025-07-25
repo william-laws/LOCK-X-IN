@@ -1,2 +1,2 @@
 # LOCK-X-IN
-No funding. No budget. Open source.
+No funding. $0 budget. Open source.
