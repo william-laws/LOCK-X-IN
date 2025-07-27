@@ -89,6 +89,9 @@ body {
   margin-bottom: 32px;
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .add-project-button {
@@ -108,6 +111,7 @@ body {
   gap: 12px;
   min-width: 200px;
   min-height: 200px;
+  flex-shrink: 0;
 }
 
 .add-project-button:hover {
@@ -138,6 +142,73 @@ body {
   border-radius: 12px;
   padding: 24px;
   overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Project board styles */
+.project-board {
+  background-color: #000000;
+  border: 2px solid #333333;
+  border-radius: 12px;
+  width: 280px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.project-board:hover {
+  border-color: #007AFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 122, 255, 0.15);
+}
+
+.project-title {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #333333;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+
+.project-title-text {
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  text-align: center;
+}
+
+.project-title-text:hover {
+  color: #007AFF;
+}
+
+.project-title-input {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  font-family: inherit;
+}
+
+.project-title-input::placeholder {
+  color: #888888;
 }
 
 /* Calendar view styles */
