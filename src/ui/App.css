@@ -211,6 +211,171 @@ body {
   color: #888888;
 }
 
+/* Kanban board styles */
+.kanban-view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+
+.kanban-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  border-bottom: 1px solid #333333;
+  flex-shrink: 0;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #007AFF;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(0, 122, 255, 0.1);
+}
+
+.project-title-large {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.kanban-board {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.kanban-list {
+  background-color: #111111;
+  border-radius: 12px;
+  min-width: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333333;
+  flex-shrink: 0;
+}
+
+.list-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 20px;
+  border-bottom: 1px solid #333333;
+  margin: 0;
+}
+
+.list-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  min-height: 400px;
+}
+
+.task-card {
+  background-color: #222222;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  padding: 12px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.task-card:hover {
+  border-color: #007AFF;
+  background-color: #2a2a2a;
+}
+
+.task-content {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  user-select: none;
+  padding-right: 24px;
+}
+
+.task-content:hover {
+  color: #007AFF;
+}
+
+.task-input {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 0;
+  font-family: inherit;
+}
+
+.delete-task-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  color: #888888;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.task-card:hover .delete-task-btn {
+  opacity: 1;
+}
+
+.delete-task-btn:hover {
+  color: #ff4444;
+  background-color: rgba(255, 68, 68, 0.1);
+}
+
+.add-task-section {
+  margin-top: auto;
+}
+
+.add-task-input {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.add-task-input:focus {
+  border-color: #007AFF;
+}
+
+.add-task-input::placeholder {
+  color: #888888;
+}
+
 /* Calendar view styles */
 .calendar-view {
   height: 100%;
